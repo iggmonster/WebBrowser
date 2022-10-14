@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebBrowser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrow_back_FILL0_wght400_GRAD0_opsz48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/help_FILL0_wght400_GRAD0_opsz48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BrowserProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrowserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrowserProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/keiff/IdeaProjects/WebBrowser",
+    "last_opened_file_path": "C:/Users/keiff/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -71,6 +63,7 @@
       <updated>1665687600366</updated>
       <workItem from="1665687601614" duration="1068000" />
       <workItem from="1665688703287" duration="1712000" />
+      <workItem from="1665762229483" duration="2228000" />
     </task>
     <servers />
   </component>

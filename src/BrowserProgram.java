@@ -19,15 +19,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToolBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebEvent;
 import javafx.scene.web.WebView;
@@ -107,20 +105,50 @@ public class BrowserProgram extends Application {
 	 */
 	@Override
 	public void start(Stage primaryStage) {
-		BorderPane bp = new BorderPane();
-		Button backButton = new Button();
-		Button fowardButton = new Button();
-		//fowardButton.setGraphic(new ImageView("arrow_back_FILL0_wght400_GRAD0_opsz48.png"));
-		Button helpButton = new Button();
-		//helpButton.setGraphic(new ImageView("arrow_back_FILL0_wght400_GRAD0_opsz48.png"));
+
+		//ToolBar
+		Button refresh = new Button("⟳");//b1
+		Button search = new Button("Search");//b2
+		Button backButton = new Button("<");
+		Button fowardButton = new Button(">");
+		Button helpButton = new Button("?");
+		TextField urlBar = new TextField();//tf1
+		urlBar.setPromptText("URL Address");
+		HBox topBar = new HBox(6);//tb
+		topBar.getChildren().addAll(backButton, fowardButton, refresh, urlBar, search, helpButton);
+
+
+
+		try {
+			BorderPane bp = new BorderPane();
+			Scene scene = new Scene(bp, 800, 800);
+			primaryStage.setScene(scene);
+			primaryStage.setMaximized(true);
+			primaryStage.show();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+/*
+		Button backButton = new Button("<");
+		Button fowardButton = new Button(">");
+		Button helpButton = new Button("?");
 		TextField urlBar = new TextField();
+		urlBar.setPromptText("URL Address");
 		HBox topBar = new HBox(4);
 		topBar.getChildren().addAll(backButton, fowardButton, urlBar, helpButton);
 		bp.setTop(topBar);
 
-		Scene scene = new Scene(bp, 800, 800);
-		primaryStage.setScene(scene);
-		primaryStage.show();
+ */
+
+		//WebView browser = new WebView();
+		//WebEngine webEngine = browser.getEngine();
+		//webEngine.load("http://youtube.com");
+
+		//String s=urlBar.getText();
+		//webEngine.load("http://"+s);
+		//tab1
+
+
 	}
 
 	/**
