@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="Stuff I did at home pt.2">
-      <change afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="it done :)">
       <change beforePath="$PROJECT_DIR$/src/BrowserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrowserProgram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
       <updated>1665687600366</updated>
       <workItem from="1665687601614" duration="1068000" />
       <workItem from="1665688703287" duration="1712000" />
-      <workItem from="1665762229483" duration="14272000" />
+      <workItem from="1665762229483" duration="15128000" />
     </task>
     <task id="LOCAL-00001" summary="Stuff I did at home">
       <created>1665764641125</created>
@@ -81,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665773300826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="it done :)">
+      <created>1665787918796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665787918796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Stuff I did at home" />
     <MESSAGE value="Stuff I did at home pt.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stuff I did at home pt.2" />
+    <MESSAGE value="it done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="it done :)" />
   </component>
 </project>

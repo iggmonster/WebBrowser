@@ -15,6 +15,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
@@ -118,12 +119,6 @@ public class BrowserProgram extends Application {
 	public void start(Stage primaryStage) {
 
 
-		//WebView myWebView = new WebView();
-		//WebEngine engine = myWebView.getEngine();
-		//engine.load("https://www.google.com");
-
-		//VBox root = new VBox();
-		//root.getChildren().addAll(myWebView);
 
 
 //make scene
@@ -159,6 +154,7 @@ public class BrowserProgram extends Application {
 		bp.setCenter(makeHtmlView());
 		bp.setBottom(bottomBar);
 		webEngine.load("https://www.google.com");
+
 //popup window
 		Stage popupwindow=new Stage();
 		popupwindow.initModality(Modality.APPLICATION_MODAL);
