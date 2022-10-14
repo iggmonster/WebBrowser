@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="">
+    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="Stuff I did at home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BrowserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrowserProgram.java" afterDir="false" />
     </list>
@@ -27,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/keiff/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib",
+    "last_opened_file_path": "C:/Users/keiff/Documents/GitHub/Week7Lab",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -47,7 +47,7 @@
     <configuration name="BrowserProgram" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BrowserProgram" />
       <module name="WebBrowser" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\keiff\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\keiff\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml,javafx.web,javafx.media" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,8 +63,16 @@
       <updated>1665687600366</updated>
       <workItem from="1665687601614" duration="1068000" />
       <workItem from="1665688703287" duration="1712000" />
-      <workItem from="1665762229483" duration="2228000" />
+      <workItem from="1665762229483" duration="4651000" />
     </task>
+    <task id="LOCAL-00001" summary="Stuff I did at home">
+      <created>1665764641125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665764641125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Stuff I did at home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stuff I did at home" />
   </component>
 </project>

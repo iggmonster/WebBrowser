@@ -1,6 +1,10 @@
 // IMPORTS
 // These are some classes that may be useful for completing the project.
 // You may have to add others.
+
+//--module-path
+//C:\Users\keiff\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib
+//--add-modules=javafx.controls,javafx.fxml,javafx.web,javafx.media
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -91,6 +95,15 @@ public class BrowserProgram extends Application {
 		statusbarPane.getChildren().addAll(statusbar);
 		return statusbarPane;
 	}
+/*
+	private WebView webView{
+		WebView webViewPane = new WebView();
+
+		VBox root = new VBox();
+		root.getChildren().addAll(webViewPane);
+	}
+
+ */
 
 	// REQUIRED METHODS
 	/**
@@ -106,7 +119,29 @@ public class BrowserProgram extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 
-		//ToolBar
+
+		WebView myWebView = new WebView();
+		WebEngine engine = myWebView.getEngine();
+		engine.load("https://www.google.com");
+
+		VBox root = new VBox();
+		root.getChildren().addAll(myWebView);
+
+
+
+		BorderPane bp = new BorderPane();
+		try {
+
+			Scene scene = new Scene(bp, 800, 800);
+			primaryStage.setScene(scene);
+			primaryStage.setMaximized(true);
+			primaryStage.show();
+
+
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
 		Button refresh = new Button("⟳");//b1
 		Button search = new Button("Search");//b2
 		Button backButton = new Button("<");
@@ -116,18 +151,7 @@ public class BrowserProgram extends Application {
 		urlBar.setPromptText("URL Address");
 		HBox topBar = new HBox(6);//tb
 		topBar.getChildren().addAll(backButton, fowardButton, refresh, urlBar, search, helpButton);
-
-
-
-		try {
-			BorderPane bp = new BorderPane();
-			Scene scene = new Scene(bp, 800, 800);
-			primaryStage.setScene(scene);
-			primaryStage.setMaximized(true);
-			primaryStage.show();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
+		bp.setTop(topBar);
 /*
 		Button backButton = new Button("<");
 		Button fowardButton = new Button(">");
@@ -140,9 +164,12 @@ public class BrowserProgram extends Application {
 
  */
 
+
+
 		//WebView browser = new WebView();
-		//WebEngine webEngine = browser.getEngine();
-		//webEngine.load("http://youtube.com");
+		//WebEngine webEngine = makeHtmlView().getEngine();
+		//webEngine.load("http://google.com");
+
 
 		//String s=urlBar.getText();
 		//webEngine.load("http://"+s);
