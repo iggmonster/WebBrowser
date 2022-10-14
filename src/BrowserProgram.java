@@ -120,12 +120,12 @@ public class BrowserProgram extends Application {
 	public void start(Stage primaryStage) {
 
 
-		WebView myWebView = new WebView();
-		WebEngine engine = myWebView.getEngine();
-		engine.load("https://www.google.com");
+		//WebView myWebView = new WebView();
+		//WebEngine engine = myWebView.getEngine();
+		//engine.load("https://www.google.com");
 
-		VBox root = new VBox();
-		root.getChildren().addAll(myWebView);
+		//VBox root = new VBox();
+		//root.getChildren().addAll(myWebView);
 
 
 
@@ -150,19 +150,31 @@ public class BrowserProgram extends Application {
 		TextField urlBar = new TextField();//tf1
 		urlBar.setPromptText("URL Address");
 		HBox topBar = new HBox(6);//tb
+		HBox.setHgrow(urlBar, Priority.ALWAYS);
 		topBar.getChildren().addAll(backButton, fowardButton, refresh, urlBar, search, helpButton);
 		bp.setTop(topBar);
-/*
-		Button backButton = new Button("<");
-		Button fowardButton = new Button(">");
-		Button helpButton = new Button("?");
-		TextField urlBar = new TextField();
-		urlBar.setPromptText("URL Address");
-		HBox topBar = new HBox(4);
-		topBar.getChildren().addAll(backButton, fowardButton, urlBar, helpButton);
-		bp.setTop(topBar);
+		bp.setCenter(makeHtmlView());
+		webEngine.load("https://www.google.com");
 
- */
+		primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, ev ->{
+			if (ev.getCode() == KeyCode.ENTER && urlBar.isFocused()) {
+				webEngine.load((urlBar.getText()));
+				ev.consume();
+			}
+		});
+
+		backButton.setOnAction(actionEvent -> {
+				if (!webEngine.getHistory().getEntries().isEmpty()) {
+					webEngine.getHistory().go(-1);
+					actionEvent.consume();
+				}
+			});
+
+
+		fowardButton.setOnAction(actionEvent -> {
+			webEngine.getHistory().go(+1);
+			actionEvent.consume();
+		});
 
 
 
