@@ -5,6 +5,13 @@
 //--module-path
 //C:\Users\keiff\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib
 //--add-modules=javafx.controls,javafx.fxml,javafx.web,javafx.media
+
+/**
+ * @author Keiffer Button
+ * Lab Section: L01
+ * Class: CS1131 Accelerated Intro to Programming
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,12 +25,10 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToolBar;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -35,6 +40,7 @@ import javafx.scene.web.WebEvent;
 import javafx.scene.web.WebView;
 import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebHistory.Entry;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.concurrent.Worker.State;
 import javafx.concurrent.Worker;
@@ -95,15 +101,7 @@ public class BrowserProgram extends Application {
 		statusbarPane.getChildren().addAll(statusbar);
 		return statusbarPane;
 	}
-/*
-	private WebView webView{
-		WebView webViewPane = new WebView();
 
-		VBox root = new VBox();
-		root.getChildren().addAll(webViewPane);
-	}
-
- */
 
 	// REQUIRED METHODS
 	/**
@@ -128,7 +126,7 @@ public class BrowserProgram extends Application {
 		//root.getChildren().addAll(myWebView);
 
 
-
+//make scene
 		BorderPane bp = new BorderPane();
 		try {
 
@@ -141,7 +139,7 @@ public class BrowserProgram extends Application {
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-
+//initializing stuff
 		Button refresh = new Button("⟳");//b1
 		Button search = new Button("Search");//b2
 		Button backButton = new Button("<");
@@ -149,43 +147,103 @@ public class BrowserProgram extends Application {
 		Button helpButton = new Button("?");
 		TextField urlBar = new TextField();//tf1
 		urlBar.setPromptText("URL Address");
+		TextField statusBar = new TextField();
+		statusBar.setEditable(false);
+		HBox bottomBar = new HBox(4);
+		HBox.setHgrow(statusBar, Priority.ALWAYS);
+		bottomBar.getChildren().addAll(statusBar);
 		HBox topBar = new HBox(6);//tb
 		HBox.setHgrow(urlBar, Priority.ALWAYS);
 		topBar.getChildren().addAll(backButton, fowardButton, refresh, urlBar, search, helpButton);
 		bp.setTop(topBar);
 		bp.setCenter(makeHtmlView());
+		bp.setBottom(bottomBar);
 		webEngine.load("https://www.google.com");
-
+//popup window
+		Stage popupwindow=new Stage();
+		popupwindow.initModality(Modality.APPLICATION_MODAL);
+		popupwindow.setTitle("Help");
+		Label label1= new Label("Author: Keiffer Button\nLab Section: L01\nCourse: CS1131 Accelerated Intro to Programming");
+		Button button1= new Button("Ok");
+		button1.setOnAction(e -> popupwindow.close());
+		VBox layout= new VBox(10);
+		layout.getChildren().addAll(label1, button1);
+		layout.setAlignment(Pos.CENTER);
+		Scene scene1= new Scene(layout, 300, 250);
+		popupwindow.setScene(scene1);
+		popupwindow.showAndWait();
+//enter to search
 		primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, ev ->{
 			if (ev.getCode() == KeyCode.ENTER && urlBar.isFocused()) {
 				webEngine.load((urlBar.getText()));
 				ev.consume();
 			}
 		});
+//push search button
+		search.setOnAction(actionEvent -> {
+			try {
+				webEngine.load((urlBar.getText()));
+				actionEvent.consume();
+			} catch (Exception e){
 
+			}
+		});
+//push back button
 		backButton.setOnAction(actionEvent -> {
+			try {
 				if (!webEngine.getHistory().getEntries().isEmpty()) {
 					webEngine.getHistory().go(-1);
 					actionEvent.consume();
 				}
+			} catch (Exception e){
+
+			}
 			});
-
-
+//push forward button
 		fowardButton.setOnAction(actionEvent -> {
-			webEngine.getHistory().go(+1);
+			try {
+				webEngine.getHistory().go(+1);
+				actionEvent.consume();
+			} catch (Exception e){
+
+			}
+		});
+//push refresh button
+		refresh.setOnAction(actionEvent -> {
+			webEngine.getHistory().go(0);
+			webEngine.reload();
 			actionEvent.consume();
+		});
+//push help button
+		helpButton.setOnAction(actionEvent -> {
+			popupwindow.showAndWait();
+			actionEvent.consume();
+		});
+//status bar
+		webEngine.setOnStatusChanged(event -> {
+			statusBar.setText(event.getData());
 		});
 
 
 
-		//WebView browser = new WebView();
-		//WebEngine webEngine = makeHtmlView().getEngine();
-		//webEngine.load("http://google.com");
+//url bar and title bar rename
+stage = primaryStage;
+		webEngine.getLoadWorker().stateProperty().addListener(
+				(ov, oldState, newState) -> {
+					if (newState == State.SUCCEEDED){
+						urlBar.setText(webEngine.getLocation());
+						if (webEngine.titleProperty() == null) {
+							stage.setTitle(webEngine.getLocation());
+						}
+						else stage.setTitle(webEngine.titleProperty().getValue());
+				}
+
+		}
+		);
 
 
-		//String s=urlBar.getText();
-		//webEngine.load("http://"+s);
-		//tab1
+
+
 
 
 	}

@@ -1,0 +1,56 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4ae7d9f3-00a6-4623-89de-4abbac24189d\" name=\"Changes\" comment=\"Stuff I did at home\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/BrowserProgram.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/BrowserProgram.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2G5o2aydikrjHlZnLsQKyTtIrc9\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/keiff/Documents/GitHub/Week7Lab\",\r\n    \"project.structure.last.edited\": \"Libraries\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\keiff\\IdeaProjects\\WebBrowser\" />\r\n      <recent name=\"C:\\Users\\keiff\\IdeaProjects\\WebBrowser\\src\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\keiff\\IdeaProjects\\WebBrowser\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"BrowserProgram\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"BrowserProgram\" />\r\n      <module name=\"WebBrowser\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"--module-path C:\\Users\\keiff\\Downloads\\openjfx-11.0.2_windows-x64_bin-sdk\\javafx-sdk-11.0.2\\lib --add-modules=javafx.controls,javafx.fxml,javafx.web,javafx.media\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4ae7d9f3-00a6-4623-89de-4abbac24189d\" name=\"Changes\" comment=\"\" />\r\n      <created>1665687600366</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665687600366</updated>\r\n      <workItem from=\"1665687601614\" duration=\"1068000\" />\r\n      <workItem from=\"1665688703287\" duration=\"1712000\" />\r\n      <workItem from=\"1665762229483\" duration=\"4651000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Stuff I did at home\">\r\n      <created>1665764641125</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665764641125</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Stuff I did at home\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Stuff I did at home\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a6c90b0da1e7cb1e85cb7a1a432f703b66305250)
++++ b/.idea/workspace.xml	(date 1665777983636)
+@@ -1,9 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="Stuff I did at home">
++    <list default="true" id="4ae7d9f3-00a6-4623-89de-4abbac24189d" name="Changes" comment="Stuff I did at home pt.2">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/BrowserProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrowserProgram.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -63,7 +62,7 @@
+       <updated>1665687600366</updated>
+       <workItem from="1665687601614" duration="1068000" />
+       <workItem from="1665688703287" duration="1712000" />
+-      <workItem from="1665762229483" duration="4651000" />
++      <workItem from="1665762229483" duration="5020000" />
+     </task>
+     <task id="LOCAL-00001" summary="Stuff I did at home">
+       <created>1665764641125</created>
+@@ -72,7 +71,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1665764641125</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Stuff I did at home pt.2">
++      <created>1665773300826</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1665773300826</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -91,6 +97,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Stuff I did at home" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Stuff I did at home" />
++    <MESSAGE value="Stuff I did at home pt.2" />
++    <option name="LAST_COMMIT_MESSAGE" value="Stuff I did at home pt.2" />
+   </component>
+ </project>
+\ No newline at end of file
