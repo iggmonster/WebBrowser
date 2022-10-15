@@ -159,7 +159,9 @@ public class BrowserProgram extends Application {
 		Stage popupwindow=new Stage();
 		popupwindow.initModality(Modality.APPLICATION_MODAL);
 		popupwindow.setTitle("Help");
-		Label label1= new Label("Author: Keiffer Button\nLab Section: L01\nCourse: CS1131 Accelerated Intro to Programming");
+		Label label1= new Label("Author: Keiffer Button\nLab Section: L01\nCourse: CS1131 Accelerated Intro to Programming\n\n" +
+				"Type a URL in the top bar and hit Enter or the search\nbutton to go to that web page.\nThe back arrow goes back, forward\ngoes forward, " +
+				"and reload reloads the page.\nClick the ? button in the top right corner\nto bring up this page anytime.");
 		Button button1= new Button("Ok");
 		button1.setOnAction(e -> popupwindow.close());
 		VBox layout= new VBox(10);
