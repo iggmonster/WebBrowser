@@ -154,6 +154,13 @@ public class BrowserProgram extends Application {
 		bp.setCenter(makeHtmlView());
 		bp.setBottom(bottomBar);
 		webEngine.load("https://www.google.com");
+		//Search from command line
+		/**
+		//This works if you uncomment it but it bricks the program until you type something so it's better to not use it.
+		Scanner in = new Scanner(System.in);
+			webEngine.load(in.next());
+		 **/
+
 
 //popup window
 		Stage popupwindow=new Stage();
